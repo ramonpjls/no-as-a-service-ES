@@ -6,7 +6,7 @@
 
 
 Ever needed a graceful way to say “no”?  
-This tiny API returns random, generic, creative, and sometimes hilarious rejection reasons — perfectly suited for any scenario: personal, professional, student life, dev life, or just because.
+This tiny API (ahora en español) returns random, generic, creative, and sometimes hilarious rejection reasons — perfectly suited for any scenario: personal, professional, student life, dev life, or just because.
 
 Built for humans, excuses, and humor.
 
@@ -28,7 +28,7 @@ Built for humans, excuses, and humor.
 
 **Base URL**
 ```
-https://naas.isalman.dev/no
+https://naas.isalman.dev/no/es
 ```
 
 **Method:** `GET`  
@@ -36,13 +36,13 @@ https://naas.isalman.dev/no
 
 ### 🔄 Example Request
 ```http
-GET /no
+GET /no/es
 ```
 
 ### ✅ Example Response
 ```json
 {
-  "reason": "This feels like something Future Me would yell at Present Me for agreeing to."
+  "reason": "Hasta mi café dijo: 'Hoy no'."
 }
 ```
 
@@ -72,7 +72,7 @@ npm start
 
 The API will be live at:
 ```
-http://localhost:3000/no
+http://localhost:3000/no/es
 ```
 
 You can also change the port using an environment variable:
@@ -87,7 +87,7 @@ PORT=5000 npm start
 ```
 no-as-service/
 ├── index.js            # Express API
-├── reasons.json        # 1000+ universal rejection reasons
+├── razones.json        # 1000+ razones de rechazo en español
 ├── package.json
 ├── .devcontainer.json  # VS Code / Github devcontainer setup
 └── README.md
@@ -162,6 +162,8 @@ Here are some projects and websites that creatively integrate [no-as-a-service](
 ## 👤 Author
 
 Created with creative stubbornness by [hotheadhacker](https://github.com/hotheadhacker)
+
+Spanish localization contributed by **ramon**
 
 ---
 
